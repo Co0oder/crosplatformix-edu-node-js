@@ -1,0 +1,16 @@
+{{> head}}
+<body>
+{{> header}}
+<div class="content">
+	{{#each temp}}
+		<a href="/page/{{this.id}}/?{{this.title}}" class="article">
+			<div class="title">
+				<h1>{{this.title}}</h1>
+				<img class="logo" src="{{this.image}}">
+			</div>
+		</a>
+	{{/each}}
+</div>
+</body>
+</html>
+

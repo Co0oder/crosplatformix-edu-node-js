@@ -1,0 +1,24 @@
+<div class="top-container">
+  <h1>Навчальний Курс</h1>
+  <p>Розробка кросплатформених додатків мовою JS</p>
+</div>
+
+
+<div class="header" id="myHeader">
+  <a href="/"><h2>Crosplatformix.edu</h2></a>
+</div>
+
+<script>
+  window.onscroll = function() {myFunction()};
+  
+  var header = document.getElementById("myHeader");
+  var sticky = header.offsetTop;
+  
+  function myFunction() {
+    if (window.pageYOffset > sticky) {
+      header.classList.add("sticky");
+    } else {
+      header.classList.remove("sticky");
+    }
+  }
+</script>

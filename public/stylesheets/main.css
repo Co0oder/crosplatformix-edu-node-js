@@ -1,0 +1,286 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+}
+
+a:hover{
+    color: orangered;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #d9d9d9;
+  }
+  
+  .top-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background: url("/img/header.jpg");
+    color: #000;
+    background-color: #f1f1f1;
+    width: 100%;
+    height: 100px;
+    text-align: center;
+  }
+  
+  .header {
+    z-index: 1;
+    text-align: center;
+    padding: 10px 16px;
+    background: #555;
+    color: #f1f1f1;
+  }
+
+  .header a{
+    padding: 1px;  
+  }
+
+  .content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 16px;
+  }
+  
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  
+  .sticky + .content {
+    padding-top: 102px;
+  }
+  
+  .article{
+    margin: 10px 0;
+    background-image: url('/img/code.jpg');
+    -moz-background-size: 100%; 
+    -webkit-background-size: 100%;
+    -o-background-size: 100%; 
+    background-size: 100%;
+    background-color: #555;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    height: 200px;
+    border-radius: 20px;
+  }
+
+  
+  
+.logo{
+      width: 10%;
+  }
+  
+.page{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    padding: 2%;
+} 
+
+.gist{
+  width: 100% !important;
+  box-shadow: 10px 10px 0 0 rgb(0,0,0,0.3);
+}
+.gist-file
+.gist-data {max-width: 500px; min-width: 500px;}
+
+.gist .gist-file {
+    margin-bottom: 0;
+    border: 1px dashed #adb5bd;
+    border-radius: 0;
+}
+
+.gist .gist-data {
+    border-bottom: none;
+    border-radius: 0;
+    background-color: #f1f3f5;
+}
+
+.gist .blob-wrapper {
+    border-radius: 0;
+}
+
+.gist .highlight {
+    background-color: transparent;
+    font-family: 'Droid Sans Mono', monospace;
+    font-size: 14px;
+}
+
+.gist .highlight td {
+    padding: 5px 15px !important;
+    line-height: 1;
+    font-family: inherit;
+    font-size: inherit;
+}
+
+.gist tr:first-child td {
+    padding-top: 15px !important;
+}
+
+.gist tr:last-child td {
+    padding-bottom: 15px !important;
+}
+
+.gist .blob-num {
+    color: #ced4da;
+    background-color: #495057;
+    pointer-events: none;
+}
+
+.gist .gist-meta {
+    display: none;
+}
+
+.img{
+    width: 70%;
+    box-shadow: 10px 10px 0 0 rgb(0,0,0,0.3);
+    margin: 0 auto;
+}
+
+.title{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.block_item{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.box_content{
+  background-color: #fff;
+  display: none;
+  width: 80%;
+} 
+
+.box_title{
+  margin-bottom: 0;
+  margin: 10px 0;
+  background-image: url('./header.jpg');
+  -moz-background-size: 100%; 
+  -webkit-background-size: 100%;
+  -o-background-size: 100%; 
+  background-size: 100%;
+  background-color: #555;
+  cursor: pointer;
+  color: #fff;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  width: 80%;
+  height: 160px;
+}
+
+.box_title:hover{
+  color: orangered;
+}
+
+ .container{
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  margin-top: -10px;
+}
+
+.content p{
+  font-weight: 500;
+  font-size: 25px;
+  margin: 2% 20%;
+  width: 70%;
+  text-indent: 1.5em;
+  text-align: justify;
+}
+
+.content h1{
+display: flex;
+text-align: center;
+font-size: 35px;
+padding-top: 2%;
+margin-top: 10px;
+margin-bottom: 10px;
+padding-top: 1%;
+}
+
+.error-block{
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.error-dog{
+  display: flex;
+  width: 30%;
+}
+.error-message{
+  msx-bas
+}
+
+@media screen and (max-width: 700px) {
+  .logo{
+      width: 20%;
+      cursor: pointer;
+  }
+  header button{
+      padding: 10px 35px;
+  }
+
+  .content{
+      width: 100%;
+  }
+
+  .content .img{
+      padding: 2%;
+      max-width: 95%;
+  }
+  
+  .box_title{
+    width: 100%;
+  }
+  .box_content{
+    width: 100%;
+  }
+
+  .box_title:before{
+    left: 93%;
+  }
+
+  .gist-file
+  .gist-data {max-width: 300px; min-width: 300px;}
+
+    .page{
+        width: 100%;
+        padding: 0;
+    }
+
+    .content .paragraph{
+      margin-left: 0;
+      margin-right: 0;
+      width: 100%;
+
+    }
+}

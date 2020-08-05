@@ -1,0 +1,23 @@
+<div class="content">
+    <div class="page">
+        {{#each data}}
+            {{#ifEq this.title '0'}}
+                <h1 class = "title">{{this.title}}</h1>
+            {{/ifEq}}
+
+            {{#ifEq this.text '0'}}
+                <p>{{this.text}}</p>
+            {{/ifEq}}
+
+            {{#ifEq this.image '0'}}
+                    <img src="{{this.image}}" class = "img" alt="">
+            {{/ifEq}}
+
+            {{#ifEq this.code '0'}}
+                <code>
+                    <script src="{{this.code}}"></script>
+                </code>
+            {{/ifEq}}
+        {{/each}}
+    </div>
+</div>
